@@ -1,0 +1,15 @@
+#version 330 core
+out vec4 color;
+
+in vec2 TexCoord;
+in vec3 Normal;
+in vec3 FragPos;
+
+uniform sampler2D ourTexture;
+uniform vec3 lightColor;
+
+void main()
+{
+    //color = texture(ourTexture, TexCoord) * lightColor;
+    color = texture(ourTexture, TexCoord);	
+}
